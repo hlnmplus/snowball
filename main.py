@@ -1,6 +1,5 @@
 from asyncio import run as arun
 from aiogram import types, Bot, Dispatcher
-from aiogram import types
 from aiogram.filters import ChatMemberUpdatedFilter
 from aiogram.filters.chat_member_updated import IS_NOT_MEMBER, IS_MEMBER
 import logging; logging.basicConfig(level = logging.INFO)
