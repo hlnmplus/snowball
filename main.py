@@ -1,8 +1,7 @@
-from asyncio import run as arun
+from asyncio import run
 from aiogram import types, Bot, Dispatcher
 from aiogram.filters import ChatMemberUpdatedFilter
 from aiogram.filters.chat_member_updated import IS_NOT_MEMBER, IS_MEMBER
-import logging; logging.basicConfig(level = logging.INFO)
 from aiogram.filters.command import Command
 from os import getenv
 from dotenv import load_dotenv; load_dotenv()
@@ -23,4 +22,4 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    arun(main())
+    run(main())
